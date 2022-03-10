@@ -15,13 +15,13 @@ bottoneGenera.addEventListener("click",
     console.log(inputKm.value);
     console.log(eta.value);
 
-    if (eta.value = 1){
+    if (eta.value == 1){
         document.getElementById("biglietto-scontato").innerHTML = "Biglietto Scontato" 
         document.getElementById("prezzo-finale").innerHTML = prezzoMaggiorenni.toFixed(2) + "&#8364;" 
-    } else if (eta.value = 2) {
+    } else if (eta.value == 2) {
         document.getElementById("biglietto-standard").innerHTML = "Biglietto Standard" 
         document.getElementById("prezzo-finale").innerHTML = prezzoBase.toFixed(2) + "&#8364;" 
-    } else if (eta.value = 3) {
+    } else if (eta.value == 3) {
         document.getElementById("biglietto-scontato").innerHTML = "Biglietto Scontato" 
         document.getElementById("prezzo-finale").innerHTML = prezzoOver65.toFixed(2) + "&#8364;" 
     }
