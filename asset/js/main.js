@@ -32,3 +32,6 @@ bottoneGenera.addEventListener("click",
   }
 );
 
+document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
+document.getElementById("codice-cp").innerHTML = Math.floor(Math.random() * 99999) + 9999;
+
