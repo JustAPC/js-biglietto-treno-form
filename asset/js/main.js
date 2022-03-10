@@ -3,10 +3,13 @@ let inputKm = document.getElementById("inputkm");
 let eta = document.getElementById("eta")
 
 let bottoneGenera = document.getElementById("bottone-genera");
+let bottoneAnnulla = document.getElementById("bottone-annulla");
 let resoconto = document.getElementById("resoconto");
 
 bottoneGenera.addEventListener("click",
 function(){
+
+    resoconto.style = "display: block"
     console.log(inputNome.value);
     console.log(inputKm.value);
     console.log(eta.value);
@@ -29,5 +32,11 @@ function(){
     document.getElementById("codice-cp").innerHTML = Math.floor(Math.random() * 99999) + 9999;
   }
 );
+
+bottoneAnnulla.addEventListener("click",
+  function() {
+      resoconto.style = "display: none"
+  }
+)
 
 
