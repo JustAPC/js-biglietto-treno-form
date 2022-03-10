@@ -17,10 +17,18 @@ bottoneGenera.addEventListener("click",
     let prezzoBase = (inputKm.value * 0.21);
     console.log("Il prezzo base del biglietto è di " + prezzoBase + "€");
 
-    if (età.value == Minorenne){
+    if (età.value = 1){
         prezzoScontato = prezzoBase - (prezzoBase * 0.2);
+        document.getElementById("biglietto-scontato").innerHTML = "Biglietto Scontato" 
         document.getElementById("prezzo-finale").innerHTML = prezzoScontato.toFixed(2) + "&#8364;" 
-    } 
+    } else if (età.value = 2) {
+        document.getElementById("biglietto-standard").innerHTML = "Biglietto Standard" 
+        document.getElementById("prezzo-finale").innerHTML = prezzoBase.toFixed(2) + "&#8364;" 
+    } else if (età.value = 3) {
+        prezzoScontato = prezzoBase - (prezzoBase * 0.4);
+        document.getElementById("biglietto-scontato").innerHTML = "Biglietto Scontato" 
+        document.getElementById("prezzo-finale").innerHTML = prezzoScontato.toFixed(2) + "&#8364;" 
     }
+  }
 );
 
